@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Cofftics</title>
+    <link rel="stylesheet" href="./styles/Styles2.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <img src="./coffticsminilogo.png" class="nav__logo-img" width="80 px" height="50 px">
+
+                <ul class="nav__menu none">
+                    <li class="nav__link">
+                        <a href="#quienessomos">
+                            ¿Quienes somos?
+                        </a></li>
+                    <li class="nav__link">
+                        <a href="#productos">
+                            Productos
+                        </a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#productos">
+                            Contactanos
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="nav__hamburguer">
+                <img src="images/icon-hamburger.svg" class="nav__icon">
+            </div>
+
+            <!-- <div class="nav__buttons none">
+                <a href="#" class="nav__button">Login</a>
+                <a href="#" class="nav_button nav_button--bold">Sign up</a>
+            </div> -->
+        </nav>
+
+        <section class="hero__main container">
+            <h1 class="hero__title">DESECHABLES CONCIENCIA</h1>
+
+        </section>
+
+        <img src="images/bg-pattern-intro.svg" class="hero__patterns">
+    </header>
+
+    <main class="main">
+        <section class="designed" id="quienessomos">
+            <div class="container">
+                <center>
+                    <img src="/cofftics/TVXE12vx_4x.jpg" alt="logo" class="img1" width="600px" >
+                </center>
+                <h2 class="subtitle">¿Quienes somos?</h2>
+                <!-- <div class="designed__container"> -->
+                    
+    
+                    <div class="designed__texts">
+                        <div class="designed_about designed_about--margin">
+                            <h2 class="designed__subtitle">
+                                COFFTICS
+                            </h2>
+                            <p class="designed__paragraph">
+                                <Strong class="COFFTICS">COFFTICS</Strong> es un proyecto enfocado en la creación de bioplásticos <br>
+                                a partir de los <strong>residuos</strong> generados por la siembra de café en <strong>Colombia</strong>
+                            </p>
+                        </div>
+                        <div class="designed__about">
+                            <h2 class="designed__subtitle2">
+                                Nuestra materia prima
+                            </h2>
+                            <p class="designed__paragraph">
+                                <Strong>COFFTICS</Strong> encuentra su materia prima en el mucílago del café, siendo este <br>
+                                uno de los desechos más abundantes en la producción del café en <strong>Colombia</strong>, aprovechando que el mucílago <br>
+                                 es rico en polifenoles y celulosa para conseguir <strong>bioplásticos</strong> con propiedades muy similares a la de los polimeros convencionales.
+                                
+                            </p>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+
+           
+
+        </section>
+        
+
+        <section class="infrastructure">
+
+            <div class="infrastructure__container container">
+              <div class="catalogo">
+                <div class="img-slider">
+                    <div class="slide active">
+                      <img src="/cofftics/Catalogo/plato pando.PNG" alt="" width="200px" height="280px">
+                      <div class="info">
+                        <!-- <h2>Slide 01</h2> -->
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <img src="/cofftics/Catalogo/plato con divisiones.png" alt="" width="200px" height="280px"> 
+                      <div class="info">
+                        <!-- <h2>Slide 02</h2> -->
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <img src="/cofftics/Catalogo/plato cofftics picadas.png" alt="" width="200px" height="280px">
+                      <div class="info">
+                        <!-- <h2>Slide 03</h2> -->
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <img src="/cofftics/Catalogo/vaso.png" alt="" width="200px" height="280px">
+                      <div class="info">
+                        <!-- <h2>Slide 04</h2> -->
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <img src="/cofftics/Catalogo/pitillo cofftics.png" alt="" width="200px" height="280px">
+                      <div class="info">
+                        <!-- <h2>Slide 05</h2> -->
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                      </div>
+                    </div>
+                    <div class="navigation">
+                      <div class="btn active"></div>
+                      <div class="btn"></div>
+                      <div class="btn"></div>
+                      <div class="btn"></div>
+                      <div class="btn"></div>
+                    </div>
+                  </div>
+              
+                  <script type="text/javascript">
+                  var slides = document.querySelectorAll('.slide');
+                  var btns = document.querySelectorAll('.btn');
+                  let currentSlide = 1;
+              
+                  // Javascript for image slider manual navigation
+                  var manualNav = function(manual){
+                    slides.forEach((slide) => {
+                      slide.classList.remove('active');
+              
+                      btns.forEach((btn) => {
+                        btn.classList.remove('active');
+                      });
+                    });
+              
+                    slides[manual].classList.add('active');
+                    btns[manual].classList.add('active');
+                  }
+              
+                  btns.forEach((btn, i) => {
+                    btn.addEventListener("click", () => {
+                      manualNav(i);
+                      currentSlide = i;
+                    });
+                  });
+              
+                  // Javascript for image slider autoplay navigation
+                  var repeat = function(activeClass){
+                    let active = document.getElementsByClassName('active');
+                    let i = 1;
+              
+                    var repeater = () => {
+                      setTimeout(function(){
+                        [...active].forEach((activeSlide) => {
+                          activeSlide.classList.remove('active');
+                        });
+              
+                      slides[i].classList.add('active');
+                      btns[i].classList.add('active');
+                      i++;
+              
+                      if(slides.length == i){
+                        i = 0;
+                      }
+                      if(i >= slides.length){
+                        return;
+                      }
+                      repeater();
+                    }, 10000);
+                    }
+                    repeater();
+                  }
+                  repeat();
+                  </script>
+            </div>
+
+                <!-- <img src="logo_2.jpeg" class="infrastructure__phones"> -->
+
+                <div class="infrastructure__texts" id="productos">
+                  <p class="information"> A continuación se pueden observar <br> 
+                    algunos de los productos de nuestro <strong>catálogo</strong>. <br>
+                    Para más información comunicate con nosotros.
+                  </p>
+                    <h1 class="infrastructure__title">
+                        Productos
+                    </h1>
+                    <p class="infrastructure__paragraph">
+                        Catálogo
+                    </p>
+                </div>
+                
+            </div>
+            
+        </section>
+
+        <section class="designed designed--left">
+
+            <div class="container">
+                
+             <div class="designed_container designed_container--left">
+                <div class="designed_illustration designed_illustration--right"></div>
+
+                <div class="footer">
+                    <div class="designed_about designed_about--margin">
+                        <h1 class="designed__subtitle">
+                            Contactanos
+                        </h1>
+                        <p class="designed__paragraph">
+
+                        </p>
+                    </div>
+                    <div class="designed__about">
+                        <!-- <h2 class="designed__subtitle"> -->
+                        
+                        <!-- </h2> -->
+                        <p class="designed__paragraph">
+                          <strong>WHATSAPP:</strong> 3014439409 - 300 3913590 <br>
+                          <strong>INSTAGRAM:</strong> @cofftics
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+         </section>
+    </main>
+
+
+    <!-- <footer class="footer"> -->
+        <!-- <div class="footer__container container"> -->
+            <!-- <img src="HeroCofftics.jpg" class="footer__logo" width="500px">
+        </div>
+    </footer> -->
+</body>
+</html>
