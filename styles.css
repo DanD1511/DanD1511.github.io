@@ -419,7 +419,7 @@ body header a {
 
     /* -------------------------------- */
 
-    .designed--left{
+    /* .designed--left { */
         /* --padding-container:0 0 80px ; */
     }
 
@@ -641,5 +641,4 @@ body header a {
 
 .information strong {
     color: white;
-}
 }
